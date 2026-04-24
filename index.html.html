@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>My Website</title>
+    <script src="MyWebsite"> </script>
+    <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:40px;
+            }
+
+            body{
+               background-color: rgb(44, 44, 44);
+               background-size: 200px 200px; 
+            }
+        
+    </style>
+    </head>
+
+    <body>
+        <script>
+            var sound1 = new Audio("sound/Dracula.wav")
+
+            window.onload = function(){
+                document.getElementById('eye').addEventListener('click', function () {sound1.play();})
+                document.getElementById('nose').addEventListener('click', function (){sound1.play();})
+                document.getElementById('lips') .addEventListener('click', function (){sound1.play();})
+            };
+        </script>
+
+        <div class="row">
+            <div class="image-container"><img id="Dracula" src="img/eye.png" onmouseover="this.src='img/eye2.png';" onmouseout="this.src='img/eye.png';" height="50" width="100"/></div>
+            <div class="image-container"><img id="nose" src="img/nose.png" onmouseover="this.src='img/nose2.png';" onmouseout="this.src='img/nose.png';" height="100" width="100"/></div>
+            <div class="image-container"><img id="mouth" src="img/lips2.png" onmouseover="this.src='img/mouth.png';" onmouseout="this.src='img/lips2.png';" height="100" width="100"/></div>
+    
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="hair" src="img/hair.png" onmouseover="this.src='img/hair2.png';" onmouseout="this.src='img/hair.png';" height="110" width="110"/></div>
+            <div class="image-container"><img id="jaw" src="img/jaw.png" onmouseover="this.src='img/jaw2.png';" onmouseout="this.src='img/jaw.png';" height="100" width="100"/></div>
+            <div class="image-container"><img id="eyebrow" src="img/eyebrow.png" onmouseover="this.src='img/eyebrow2.png';" onmouseout="this.src='img/eyebrow.png';" height="150" width="150"/></div>
+
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="name" src="img/name.png" onmouseover="this.src='img/name2.png';" onmouseout="this.src='img/name.png';" height="100" width="100"/></div>
+            <div class="image-container"><img id="bio" src="img/bio.png" onmouseover="this.src='img/bio2.png';" onmouseout="this.src='img/bio.png';" height="80" width="80"/></div>
+            <div class="image-container"><img id="work" src="img/work.png" height="50" width="80"/></div>
+            </div>
+
+    </body>
+    
+</html>
